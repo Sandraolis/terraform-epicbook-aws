@@ -1,5 +1,16 @@
-.terraform/
-*.tfstate
-*.tfstate.*
-crash.log
+# Terraform sensitive files
+terraform.tfvars
 *.tfvars
+*.tfvars.json
+
+# Terraform state files (VERY sensitive)
+terraform.tfstate
+terraform.tfstate.*
+.terraform/
+
+# Crash logs
+crash.log
+
+# SSH keys
+*.pem
+*.key
